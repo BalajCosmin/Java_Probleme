@@ -1,0 +1,50 @@
+//program pentru convertirea temperaturii din grade celsius in grade fahrenheit si invers
+
+package com.company;
+import java.util.*;
+
+public class Convert_Temperature{
+
+    public static void main(String[] args){
+
+        int option;
+        System.out.println("What do you wanna do?: \n" +
+                "1 Convert Celsius-Fahrenheit \n" +  "2 Convert Fahrenheit-Celsius \n" + "3 Exit \n");
+
+        Scanner read_option = new Scanner("System.in");
+        option = read_option.nextInt();
+
+
+
+        if(option==1) {
+            double celsius;   //citeste temperatura in grade celsius;
+            System.out.println("introduce the temperature in degrees celsius :");
+            Scanner read = new Scanner(System.in);
+            celsius = read.nextDouble();
+
+            double fahrenheit = celsius * (9 / 5) + 32;
+            String.format("%.2f", fahrenheit);
+            System.out.println(celsius + "degrees celsius is " + fahrenheit + " degrees fahrenheit");
+        }
+        else if(option ==2) {
+
+           double fahrenheit;   //citeste temperatura in grade celsius;
+            System.out.println("introduce the temperature in degrees celsius :");
+            Scanner read = new Scanner(System.in);
+            fahrenheit= read.nextDouble();
+
+            double celsius = (fahrenheit - 32) * (5/9);
+            String.format("%.2f", celsius);
+            System.out.println(celsius + "degrees fahrenheit is " + celsius + " degrees celsius");
+        }
+        else if(option==3)
+            {
+                System.exit(0);
+            }
+        else
+            System.out.println("Optiune gresita");
+            System.exit(0);
+
+
+    }
+}
