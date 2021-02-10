@@ -1,0 +1,32 @@
+package com.company;
+import java.util.*;
+
+public class Main{
+
+    public static void main(String[] args){
+
+
+
+        int seconds;
+        System.out.println("Introduce the current number of seconds: ");
+        Scanner read_seconds = new Scanner(System.in);
+        seconds = read_seconds.nextInt();
+
+
+        while(seconds>3600)
+        { seconds= seconds-(60*60);   //scad ore din secunde cat se poate
+            hours++;}
+
+        while (seconds>=60 && seconds<3600)
+        {  seconds=seconds-60;
+            minutes++;}
+
+        sec = seconds;
+
+        System.out.println(seconds + " seconds is "+ hours + " hours " + minutes + " minutes "+ sec + "  seconds");
+
+
+
+
+    }}
+
