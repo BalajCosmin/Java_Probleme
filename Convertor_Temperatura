@@ -42,7 +42,7 @@ public class Convert_Temperature{
                 System.exit(0);
             }
         else
-            System.out.println("Optiune gresita");
+            System.out.println("Enter another option");
             System.exit(0);
 
 
