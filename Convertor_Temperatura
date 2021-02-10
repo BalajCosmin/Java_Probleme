@@ -11,7 +11,7 @@ public class Convert_Temperature{
         System.out.println("What do you wanna do?: \n" +
                 "1 Convert Celsius-Fahrenheit \n" +  "2 Convert Fahrenheit-Celsius \n" + "3 Exit \n");
 
-        Scanner read_option = new Scanner("System.in");
+        Scanner read_option = new Scanner(System.in);
         option = read_option.nextInt();
 
 
