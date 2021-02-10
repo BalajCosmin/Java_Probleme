@@ -1,0 +1,29 @@
+// joc de ghicit valoare aleatorie intre 1 si 100
+
+package com.company;
+import javax.print.attribute.standard.PrinterLocation;
+import java.util.*;
+import java.math.*;
+
+public class Random_number{
+
+    public static void main(String[] args){
+
+    Random random = new Random();       //cream valoare aleatorie de la 1 la 100
+    int number = random.nextInt(100)+1;
+    System.out.println("Guess my number: '\n  What's your choice?");  // citim un numar
+    Scanner read_number = new Scanner(System.in);
+    int choice = read_number.nextInt();
+
+    if(number == choice)
+    { System.out.println("You guessed my choice.");}       //verificare
+    else
+    if(number != choice)
+    {System.out.println("Your answer is wrong. \n The correct answer is " + number);
+      System.out.println("You were off by " + Math.abs(number-choice));}   //diferenta dintre numar si valoarea aleatoare
+
+
+
+
+    }
+}
