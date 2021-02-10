@@ -5,7 +5,9 @@ public class Main{
 
     public static void main(String[] args){
 
-
+        int hours=0;
+        int minutes=0;
+        int sec;
 
         int seconds;
         System.out.println("Introduce the current number of seconds: ");
@@ -23,7 +25,7 @@ public class Main{
 
         sec = seconds;
 
-        System.out.println(seconds + " seconds is "+ hours + " hours " + minutes + " minutes "+ sec + "  seconds");
+        System.out.println(seconds + "seconds is "+ hours + " hours " + minutes + " minutes "+ sec + " seconds");
 
 
 
